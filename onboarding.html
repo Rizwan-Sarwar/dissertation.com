@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissertation :: Onboarding</title>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- splide cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <!-- onbarding stylesheet -->
+    <link rel="stylesheet" href="assets/css/onboarding.css">
+</head>
+<body>
+    <!-- onboarding -->
+    <section class="onboarding-wrap">
+        <div class="cantainer">
+            <div class="grid2">
+                <!-- onboarding edit -->
+                <div class="col">
+                    <div class="onbarding-editing">
+                        <section class="splide onboarding-scroll" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <!-- onbarding step 1 -->
+                                    <li class="splide__slide">
+                                        <div class="onboarding-step onboarding-step1">
+                                            <!-- logo -->
+                                            <div class="logo-wrap">
+                                                <span>Logo Here</span>
+                                            </div>
+                                            <!-- heading -->
+                                            <div class="heading-wrap">
+                                                <span>Let's get you set up!</span>
+                                            </div>
+                                            <!-- all fields -->
+                                            <div class="fields-wrap">
+                                                <!-- field wrap -->
+                                                <div class="field rs-user-photo-wrapper">
+                                                    <div class="label-wrap">
+                                                        <label for="user photo">Add Photo</label>
+                                                    </div>
+                                                    <div class="input-wrap">
+                                                        <div class="userImage-sm-wrap user-photo-show">
+                                                            <img src="assets/images/profile.svg" alt="user small image">
+                                                        </div>
+                                                        <input type="file" name="user photo" class="user-photo-selector" accept="image/png, image/gif, image/jpeg">
+                                                    </div>
+                                                </div>
+                                                <!-- field wrap -->
+                                                <div class="field">
+                                                    <div class="label-wrap">
+                                                        <label for="user name">Your Name</label>
+                                                    </div>
+                                                    <div class="input-wrap">
+                                                        <input type="text" name="user name" id="userNameInput">
+                                                    </div>
+                                                </div>
+                                                <!-- submit button wrap -->
+                                                <div class="button-wrap">
+                                                    <button onclick="SlideMover()">
+                                                        <span>Continue</span>
+                                                        <svg fill="currentColor" height="20" stroke-width="0" width="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.10719 2.25085C9.45008 1.91733 10.0071 1.91625 10.3514 2.24843L17.7411 9.39613C17.9068 9.55607 18 9.77338 18 10C18 10.2267 17.9068 10.444 17.7411 10.6039L10.3514 17.7516C10.0071 18.0838 9.45008 18.0827 9.10718 17.7492C8.76429 17.4156 8.76541 16.876 9.10968 16.5438L14.9901 10.8523H2.8798C2.3939 10.8523 2 10.4707 2 10C2 9.52929 2.3939 9.1477 2.8798 9.1477H14.9901L9.10968 3.4562C8.76541 3.12402 8.76429 2.58436 9.10719 2.25085Z" fill-rule="evenodd"></path></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- onbarding step 2 -->
+                                    <li class="splide__slide">
+                                        <div class="onboarding-step onboarding-step2">
+                                            <!-- logo -->
+                                            <div class="logo-wrap">
+                                                <span>Logo Here</span>
+                                            </div>
+                                            <!-- heading -->
+                                            <div class="heading-wrap">
+                                                <span>How will you use dissertation?</span>
+                                            </div>
+                                            <!-- all fields -->
+                                            <div class="fields-wrap rs-radio-btn-wrap">
+                                                <!-- field wrap -->
+                                                <div class="field">
+                                                    <div class="label-wrap">
+                                                        <label for="for_work">For work</label>
+                                                    </div>
+                                                    <div class="input-wrap">
+                                                        <input type="radio" id="for_work" name="WhyYouHere" value="For work" onchange="RadioButtonChecked(this)">
+                                                    </div>
+                                                </div>
+                                                <!-- field wrap -->
+                                                <div class="field">
+                                                    <div class="label-wrap">
+                                                        <label for="for_education">For education</label><br>
+                                                    </div>
+                                                    <div class="input-wrap">
+                                                        <input type="radio" id="for_education" name="WhyYouHere" value="For education" onchange="RadioButtonChecked(this)">
+                                                    </div>
+                                                </div>
+                                                <!-- field wrap -->
+                                                <div class="field">
+                                                    <div class="label-wrap">
+                                                        <label for="for_personal_use">For personal use</label>
+                                                    </div>
+                                                    <div class="input-wrap">
+                                                        <input type="radio" id="for_personal_use" name="WhyYouHere" value="For personal use" onchange="RadioButtonChecked(this)">
+                                                    </div>
+                                                </div>
+                                                <!-- submit button wrap -->
+                                                <div class="button-wrap">
+                                                    <button onclick="SlideMover()">
+                                                        <span>Continue</span>
+                                                        <svg fill="currentColor" height="20" stroke-width="0" width="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.10719 2.25085C9.45008 1.91733 10.0071 1.91625 10.3514 2.24843L17.7411 9.39613C17.9068 9.55607 18 9.77338 18 10C18 10.2267 17.9068 10.444 17.7411 10.6039L10.3514 17.7516C10.0071 18.0838 9.45008 18.0827 9.10718 17.7492C8.76429 17.4156 8.76541 16.876 9.10968 16.5438L14.9901 10.8523H2.8798C2.3939 10.8523 2 10.4707 2 10C2 9.52929 2.3939 9.1477 2.8798 9.1477H14.9901L9.10968 3.4562C8.76541 3.12402 8.76429 2.58436 9.10719 2.25085Z" fill-rule="evenodd"></path></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- onbarding step 3 -->
+                                    <li class="splide__slide">
+                                        <div class="onboarding-step onboarding-step3">
+                                            <!-- logo -->
+                                            <div class="logo-wrap">
+                                                <span>Logo Here</span>
+                                            </div>
+                                            <!-- heading -->
+                                            <div class="heading-wrap">
+                                                <span>Thanks For Joining Us</span>
+                                            </div>
+                                            <!-- all fields -->
+                                            <div class="fields-wrap">
+                                                <!-- submit button wrap -->
+                                                <div class="button-wrap">
+                                                    <button onclick="DashBoardRedirection()">
+                                                        <span>Get Started</span>
+                                                        <svg fill="currentColor" height="20" stroke-width="0" width="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.10719 2.25085C9.45008 1.91733 10.0071 1.91625 10.3514 2.24843L17.7411 9.39613C17.9068 9.55607 18 9.77338 18 10C18 10.2267 17.9068 10.444 17.7411 10.6039L10.3514 17.7516C10.0071 18.0838 9.45008 18.0827 9.10718 17.7492C8.76429 17.4156 8.76541 16.876 9.10968 16.5438L14.9901 10.8523H2.8798C2.3939 10.8523 2 10.4707 2 10C2 9.52929 2.3939 9.1477 2.8798 9.1477H14.9901L9.10968 3.4562C8.76541 3.12402 8.76429 2.58436 9.10719 2.25085Z" fill-rule="evenodd"></path></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- onboarding view -->
+                <div class="col">
+                    <div class="onboarding-view">
+                        <div class="view-box">
+                            <div class="userImage-wrap">
+                                <img src="assets/images/profile.svg" alt="user profile image" class="user-photo-full">
+                            </div>
+                            <div class="userName-wrap">
+                                <span class="rs-capsule" id="userNameInputShow"></span>
+                            </div>
+                            <div class="dissertationUseFor-wrap">
+                                <span class="rs-capsule rs-hide" id="whyYouHereShow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- splide cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- script -->
+    <script src="assets/js/onboarding.js"></script>
+</body>
+</html>

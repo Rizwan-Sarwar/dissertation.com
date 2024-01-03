@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissertation :: Login</title>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<body>
+    <section class="auth-screen-wrap login-wrap">
+        <div class="cantainer">
+            <div class="grid2">
+                <div class="col">
+                    <div class="auth-box">
+                        <!-- company logo -->
+                        <div class="logo-wrap">
+                            <span>Logo Here</span>
+                        </div>
+                        <!-- screen title -->
+                        <div class="heading-wrap">
+                            <span>Log in</span>
+                            <p>Welcome back to dissertation 👋</p>
+                        </div>
+                        <!-- more authentication -->
+                        <div class="more-auth">
+                            <a href="#">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="sso__GoogleIconStyled-sc-f032d7bf-6 jJPMWN"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.64 19.2045C27.64 18.5664 27.5827 17.9527 27.4764 17.3636H19V20.845H23.8436C23.635 21.97 23.0009 22.9232 22.0477 23.5614V25.8195H24.9564C26.6582 24.2527 27.64 21.9455 27.64 19.2045Z" fill="#4285F4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19 28C21.43 28 23.4673 27.194 24.9564 25.8195L22.0477 23.5614C21.2418 24.1014 20.2109 24.4205 19 24.4205C16.6559 24.4205 14.6718 22.8373 13.9641 20.71H10.9573V23.0418C12.4382 25.9832 15.4818 28 19 28Z" fill="#34A853"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9641 20.71C13.7841 20.17 13.6818 19.5932 13.6818 19C13.6818 18.4068 13.7841 17.83 13.9641 17.29V14.9582H10.9573C10.3477 16.1732 10 17.5477 10 19C10 20.4523 10.3477 21.8268 10.9573 23.0418L13.9641 20.71Z" fill="#FBBC05"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.5795C20.3214 13.5795 21.5077 14.0336 22.4405 14.9255L25.0218 12.3441C23.4632 10.8918 21.4259 10 19 10C15.4818 10 12.4382 12.0168 10.9573 14.9582L13.9641 17.29C14.6718 15.1627 16.6559 13.5795 19 13.5795Z" fill="#EA4335"></path></svg>
+                                Sign in With Google
+                            </a>
+                            <a href="#">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="sso__AppleIconStyled-sc-f032d7bf-3 bRVkZR"><path d="M15.2672 7.07692C16.2656 7.07692 17.5172 6.40559 18.2625 5.51049C18.9375 4.6993 19.4297 3.56643 19.4297 2.43357C19.4297 2.27972 19.4156 2.12587 19.3875 2C18.2766 2.04196 16.9406 2.74126 16.1391 3.67832C15.5063 4.39161 14.9297 5.51049 14.9297 6.65734C14.9297 6.82517 14.9578 6.99301 14.9719 7.04895C15.0422 7.06294 15.1547 7.07692 15.2672 7.07692ZM11.7516 24C13.1156 24 13.7203 23.0909 15.4219 23.0909C17.1516 23.0909 17.5312 23.972 19.05 23.972C20.5406 23.972 21.5391 22.6014 22.4812 21.2587C23.5359 19.7203 23.9719 18.2098 24 18.1399C23.9016 18.1119 21.0469 16.951 21.0469 13.6923C21.0469 10.8671 23.2969 9.59441 23.4234 9.4965C21.9328 7.37063 19.6687 7.31469 19.05 7.31469C17.3766 7.31469 16.0125 8.32168 15.1547 8.32168C14.2266 8.32168 13.0031 7.37063 11.5547 7.37063C8.79844 7.37063 6 9.63636 6 13.9161C6 16.5734 7.04062 19.3846 8.32031 21.2028C9.41719 22.7413 10.3734 24 11.7516 24Z" fill="white"></path></svg>
+                                Sign in With Apple
+                            </a>
+                        </div>
+                        <div class="or-wrap">
+                            <p>or</p>
+                        </div>
+                        <div class="fields-wrap">
+                            <!-- field wrap -->
+                            <div class="field-wrap">
+                                <div class="label-wrap">
+                                    <label for="username"></label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Username or email" name="username">
+                                </div>
+                            </div>
+                            <!-- field wrap -->
+                            <div class="field-wrap">
+                                <div class="label-wrap">
+                                    <label for="password"></label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Password" name="password">
+                                </div>
+                            </div>
+                            <!-- forget password -->
+                            <div class="forget-password-wrap">
+                                <a href="forgot.html">Forgot password?</a>
+                            </div>
+                            <!-- submit button -->
+                            <div class="button-wrap">
+                                <a href="#" class="submit-button">Log in</a>
+                            </div>
+                        </div>
+                        <div class="terms-and-conditions-wrap">
+                            <p>By signing up you agree to our <a href="#">Terms of Service.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="signIn-signOut">
+                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
